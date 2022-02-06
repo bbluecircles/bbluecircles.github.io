@@ -840,12 +840,12 @@ footer {
     width: 100%;
   }
   .content .project_preview:nth-child(3) .image img {
-    transform: scale(1);
+    transform: scale(1.35) translate(0px, 25px);
     width: fit-content;
     height: 100%;
   }
   .content .project_preview:nth-child(4) .image img {
-    transform: scale(1.2) translate(-30px, 0px);
+    transform: scale(1.2) translate(-34px, -23px);
   }
 }
 
