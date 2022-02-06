@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<head>
+    <title>My Sample Company</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin" />
+</head>
+<body>
+    <main class="content">
+        <header id="header">
+            <div class="header__content">
+                    <span id="logo">ZEBRE</span>
+                    <div class="navigation">
+                        <nav class="navigation__content">
+                            <a href="#" selected="true">
+                                Home
+                            </a>
+                            <a href="#">
+                                Work
+                            </a>
+                            <a href="#">
+                                About
+                            </a>
+                            <a href="#">
+                                Contact
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="mobileNav">
+                    <i class="fas fa-align-right nav-menu" id="mobileNavigationToggle" onclick="toggleMobileNav()"></i> 
+                    <div class="theme-slider-wrapper">
+                    <label class="theme-slider" for="checkbox">
+                        <input type="checkbox" id="checkbox" checked/>
+                        <div class="round slider"></div>
+                    </label>
+                    <span>Night Mode</span>
+                    </div>
+                    </div>
+            </div>
+        </header>
+        <div class="mobile__header">
+            <div class="mobile__header__content">
+                <a href="#" selected="true">
+                    Home
+                </a>
+                <a href="#">
+                    Work
+                </a>
+                <a href="#">
+                    About
+                </a>
+                <a href="#">
+                    Contact
+                </a>
+            </div>
+        </div>
+        <section id="hero" class="hero">
+            <img id="hero-img" src="assets/images/lion.png"/>
+            <div class="hero__content__wrapper">
+            <div class="hero__content">
+                <div class="grabber">
+                    <h1>ZEBRA CREATIVE</h1>
+                    <P>We are a sample company. We do sample company things. We can help with any of your sample company things. We have a 1000 person team.</P>
+                    <a class="grabber__button" href="#">
+                        View my work <i class="fa fa-long-arrow-right" id="grabber_button_arrow"></i>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="work">
+            <div id="work_grid" class="content">
+                <div class="project_preview">
+                    <div class="image">
+                        <img src="assets/images/story.jpg" />
+                    </div>
+                    <div class="description">
+                        <h3>SOCIALA</h3>
+                        <i></i>
+                        <p>A social media website made with React and Bootstrap</p>
+                    </div>
+                </div>
+                <div class="project_preview">
+                    <div class="image">
+                        <img src="assets/images/404.jpg" />
+                    </div>
+                    <div class="description">
+                        <h3>SOCIALA</h3>
+                        <i></i>
+                        <p>A social media website made with React and Bootstrap</p>
+                    </div>
+                </div>
+                <div class="project_preview">
+                    <div class="image">
+                        <img src="assets/images/landing_page.png" />
+                    </div>
+                    <div class="description">
+                        <h3>SOCIALA</h3>
+                        <i></i>
+                        <p>A social media website made with React and Bootstrap</p>
+                    </div>
+                </div>
+                <div class="project_preview">
+                    <div class="image">
+                        <img src="assets/images/tea_cozy.png" />
+                    </div>
+                    <div class="description">
+                        <h3>SOCIALA</h3>
+                        <i></i>
+                        <p>A social media website made with React and Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="hero">
+            <div class="hero__content">
+                <div class="grabber-1 grabber">
+                    <h1 id="about-header">ABOUT ME</h1>
+                    <P>Methodical and creative solutions to web development. Skilled in ES6 Javascript, PHP, React, mySQL, and most importantly - problem solving. Quick learner and team player. Strong in written and verbal communications.
+                    </P>
+                </div>
+                <div class="grabber-2 grabber">
+                    <p>At 16 I found my passion for web development. From what started as simple websites I built for school projects became a career path, inspiring me to learn the ins-and-outs of what makes software ( and websites ) fast, elegant, and effective. 
+                    </p>
+                </div>
+                <div class="about-quote-wrapper">
+                <div class="about-quote">
+                    <blockquote id="about-quote-quote">Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</blockquote>
+                    <div id="about-quote-writter">
+                    <span>- Martin Fowler</span>
+                    <small>sofware engineer, object-oriented programming pioneer</small>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <aside>
+                <div class="c-aside-left">
+                    <h4>Contact Details</h4>
+                    <div class="contact-info">
+                        <span>My Github</span>
+                        <a href="https://www.github.com/bbluecircles">Github</a>
+                    </div>
+                    <div class="contact-info">
+                        <span>Email/Call Me</span>
+                        <a>bbluecircles@gmail.com</a>
+                        <a href="">(323) 423-4761</a>
+                    </div>
+                </div>
+                <div class="c-aside-right">
+                    <form action="submit">
+                        <input type="text" name="name" id="" placeholder="Full Name">
+                        <input type="number" name="phone" id="" placeholder="Phone Number">
+                        <input type="email" name="email" id="" placeholder="Email">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <div>
+                            <input type="submit" value="SEND Message">
+                        </div>
+                    </form>
+                </div>
+            </aside>
+        </section>
+        <footer>
+            <span>ZEBRA CREATIVE</span>
+            <span>Copyright @2022</span>
+        </footer>
+    </main>
+</body>
+<script>
+    // Is mobile header displayed
+    let mobileHeaderToggled = false;
+    let gridDisplay = false;
+    let aboutDisplay = {
+        line: false,
+        quote: false
+    };
+
+    document.documentElement.setAttribute('theme', 'dark');
+
+    // Light / Dark Mode toggle
+    const toggleSwitch =
+    document.querySelector('.theme-slider input[type="checkbox"]');
+ 
+    /* Function to change theme */
+    function switchTheme(e) {
+ 
+        /* Once checkbox is checked default theme change to dark */
+        if (e.target.checked) {
+        document.documentElement.setAttribute('theme', 'dark');
+    }
+ 
+    /* While page in dark mode and checkbox is
+    checked then theme back to change light*/
+        else {
+            document.documentElement.setAttribute('theme', 'light');
+        }
+    }
+ 
+    toggleSwitch.addEventListener('change', switchTheme, false);
+    function toggleMobileNav() {
+        const navigation = document.getElementsByClassName('mobile__header')[0];
+        const toggleButton = document.getElementById('mobileNavigationToggle');
+
+        if (mobileHeaderToggled) {
+            navigation.style.top = '-100px';
+            toggleButton.style.color = 'var(--fade)';
+            mobileHeaderToggled = false;
+        } else {
+            navigation.style.top = '101px';
+            toggleButton.style.color = 'var(--black)';
+            mobileHeaderToggled = true;
+        }
+    }
+
+    // Window Scroll Functions
+
+    function scrollAnimations() {
+        // Grid Animation Toggle
+        let workTop = document.getElementById('work').getBoundingClientRect().top;
+        let aboutTop = document.getElementById('about').offsetTop - 200;
+
+        let grid = document.getElementById('work_grid');
+        let aboutHeader = document.getElementById('about-header');
+        let aboutQuote = document.getElementById('about-quote-quote');
+        let aboutQuoteWritter = document.getElementById('about-quote-writter');
+
+        if ((window.scrollY > workTop) && gridDisplay === false) {
+            grid.style.opacity = 1;
+            gridDisplay = true;
+        }
+        if ((window.scrollY > aboutTop) && aboutDisplay.line === false) {
+            aboutHeader.classList.add('aboutgrabberh1after');
+            aboutTop = true;
+        }
+        if ((window.scrollY > (aboutTop + 200)) && aboutDisplay.quote === false) {
+            aboutQuote.classList.add('blockquote_animation');
+            aboutQuoteWritter.classList.add('blockquote_writer_animation');
+            setTimeout(()  => {
+                aboutQuote.style.transform = 'translate(0px, 0px)';
+                aboutQuoteWritter.style.transform = 'translate(0px, 0px)';
+            });
+        }
+
+    }
+    document.addEventListener('scroll', scrollAnimations);
+</script>
+</html>
