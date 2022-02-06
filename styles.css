@@ -614,6 +614,7 @@ textarea {
   transition: 0.2s background-color ease-in-out, 0.2s color ease-in-out,
     0.2s border ease-in-out;
   color: var(--black);
+  -webkit-appearance: none;
 }
 #contact form input[type="submit"]:hover {
   background-color: var(--yelllow);
@@ -660,7 +661,7 @@ footer {
   }
   .header__content .fa-align-right {
     transform: translate(30px, 0px);
-    font-size: 26px;
+    font-size: 28px;
   }
   .theme-slider-wrapper {
     transform: translate(0px, 0px);
@@ -748,6 +749,10 @@ footer {
   }
   .project_preview .image {
     height: 300px;
+  }
+  .project_preview .image img {
+    width: 120%;
+    min-height: 100%;
   }
   .content .project_preview:nth-child(1) {
     grid-column: auto;
