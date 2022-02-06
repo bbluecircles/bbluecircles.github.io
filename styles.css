@@ -660,6 +660,7 @@ footer {
   }
   .header__content .fa-align-right {
     transform: translate(30px, 0px);
+    font-size: 26px;
   }
   .theme-slider-wrapper {
     transform: translate(0px, 0px);
@@ -697,7 +698,7 @@ footer {
 }
 @media screen and (max-width: 575px) {
   .hero__content__wrapper .hero__content {
-    margin: 0px 0px 0px 60px;
+    margin: -100px 0px 0px 60px;
   }
   .hero__content__wrapper .hero__content .grabber {
     text-align: left;
