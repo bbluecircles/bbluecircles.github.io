@@ -15,16 +15,16 @@
                     <span id="logo">ZEBRE</span>
                     <div class="navigation">
                         <nav class="navigation__content">
-                            <a href="#" selected="true">
+                            <a  selected="true" onclick="scrollToHome()">
                                 Home
                             </a>
-                            <a href="#">
+                            <a  onclick="scrollToWork()">
                                 Work
                             </a>
-                            <a href="#">
+                            <a  onclick="scrollToAbout()">
                                 About
                             </a>
-                            <a href="#">
+                            <a onclick="scrollToContact()">
                                 Contact
                             </a>
                         </nav>
@@ -43,16 +43,16 @@
         </header>
         <div class="mobile__header">
             <div class="mobile__header__content">
-                <a href="#" selected="true">
+                <a  selected="true" onclick="scrollToHome()">
                     Home
                 </a>
-                <a href="#">
+                <a  onclick="scrollToWork()">
                     Work
                 </a>
-                <a href="#">
+                <a  onclick="scrollToAbout()">
                     About
                 </a>
-                <a href="#">
+                <a onclick="scrollToContact()">
                     Contact
                 </a>
             </div>
@@ -64,7 +64,7 @@
                 <div class="grabber">
                     <h1>ZEBRA CREATIVE</h1>
                     <P>We are a sample company. We do sample company things. We can help with any of your sample company things. We have a 1000 person team.</P>
-                    <a class="grabber__button" href="#">
+                    <a class="grabber__button" onclick="scrollToWork()">
                         View my work <i class="fa fa-long-arrow-right" id="grabber_button_arrow"></i>
                     </a>
                 </div>
@@ -93,7 +93,7 @@
                         <div class="description_content">
                         <h3>SUPERIO</h3>
                         <p>*IN PROGRESS* Professional Job board seach page - inspired by Indeed. Search and filter through jobs and view each job's page. Built in React.</p>
-                        <a href="./projects/superio_demo/">View Demo</a>
+                        <a href="superio_demo/">View Demo</a>
                         </div>
                     </div>
                 </div>
@@ -186,6 +186,39 @@
         line: false,
         quote: false
     };
+
+    const workOffset = document.getElementById('work').offsetTop;
+    const aboutOffset = document.getElementById('about').offsetTop;
+    const contactOffset = document.getElementById('contact').offsetTop;
+
+    function scrollToHome() {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+    function scrollToWork() {
+        window.scroll({
+            top: workOffset,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+    function scrollToAbout() {
+        window.scroll({
+            top: aboutOffset,
+            left: 0,
+            behavior: 'smooth'
+        })
+    }
+    function scrollToContact() {
+        window.scroll({
+            top: contactOffset,
+            left: 0,
+            behavior: 'smooth'
+        })
+    }
 
     document.documentElement.setAttribute('theme', 'dark');
 

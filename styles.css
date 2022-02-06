@@ -48,6 +48,9 @@
   z-index: 1;
   box-sizing: border-box;
 }
+body {
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -330,7 +333,7 @@ header {
   grid-row: span 2;
 }
 .content .project_preview:nth-child(1) .image img {
-  transform: scale(1.1) translate(35px, 20px);
+  transform: scale(1.1) translate(26px, 20px);
 }
 .content .project_preview:nth-child(2) .image img {
   transform: scale(1);
@@ -545,10 +548,11 @@ header {
 #contact {
   display: block;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background-color: var(--white);
   text-align: center;
   line-height: 167%;
+  padding: 100px 0px;
 }
 #contact h4 {
   font-size: 36px;
@@ -573,7 +577,7 @@ header {
   justify-content: center;
   align-items: flex-start;
   text-align: left;
-  margin: 100px auto;
+  margin: 0px auto;
   column-gap: 90px;
 }
 #contact .c-aside-left div {
