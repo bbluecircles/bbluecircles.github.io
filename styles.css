@@ -162,7 +162,7 @@ header {
   transition: 0.2s color ease-in-out;
 }
 .header__content .fa-align-right:before {
-  font-size: 28px;
+  font-size: 30px;
 }
 .header__content {
   display: flex;
@@ -692,7 +692,7 @@ footer {
   }
   .header__content .fa-align-right {
     transform: translate(20px, 0px);
-    font-size: 39px;
+    font-size: 0px;
   }
   .theme-slider-wrapper {
     transform: translate(0px, 0px);
