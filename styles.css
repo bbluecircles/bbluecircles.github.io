@@ -635,7 +635,7 @@ textarea {
 #contact form textarea:hover {
   border: 1px solid var(--black);
 }
-#contact form input[type="submit"] {
+#contact form input[type="button"] {
   display: block;
   padding: 15px 30px;
   border: 1px solid var(--black);
@@ -647,7 +647,7 @@ textarea {
   color: var(--black);
   -webkit-appearance: none;
 }
-#contact form input[type="submit"]:hover {
+#contact form input[type="button"]:hover {
   background-color: var(--yelllow);
   color: var(--white);
   border: 1px solid var(--yelllow);

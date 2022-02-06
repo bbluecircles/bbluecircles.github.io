@@ -166,7 +166,7 @@
                         <input type="email" name="email" id="" placeholder="Email">
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                         <div>
-                            <input type="submit" value="SEND Message">
+                            <input type="button" value="SEND Message" onsubmit="submitForm(event)">
                         </div>
                     </form>
                 </div>
@@ -187,6 +187,9 @@
         quote: false
     };
 
+    function submitForm(e) {
+        e.preventDefault();
+    }
     const workOffset = document.getElementById('work').offsetTop;
     const aboutOffset = document.getElementById('about').offsetTop;
     const contactOffset = document.getElementById('contact').offsetTop;
