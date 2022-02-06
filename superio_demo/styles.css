@@ -1,0 +1,13 @@
+body {
+  background: #303030;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+}
+video {
+  width: 85vw;
+  height: auto;
+  filter: grayscale(0.2);
+  opacity: 0.95;
+}
