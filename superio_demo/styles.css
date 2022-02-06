@@ -5,7 +5,7 @@ body {
   justify-content: center;
   height: 100vh;
 }
-video {
+iframe {
   width: 85vw;
   height: auto;
   filter: grayscale(0.2);
