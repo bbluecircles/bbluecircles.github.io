@@ -357,6 +357,14 @@ header {
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
+.project_preview .description_content {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 60px);
+  padding: 30px;
+  text-align: left;
+  gap: 30px;
+}
 .project_preview .description h3 {
   letter-spacing: 2px;
   font-size: var(--larger_font);
@@ -365,12 +373,15 @@ header {
 .project_preview .description p {
   color: var(--pure-black);
 }
-.project_preview .description i {
-  display: inline-block;
-  width: 75px;
-  height: 0px;
-  border-bottom: 1px solid var(--pure-black);
-  margin: 0 auto;
+.project_preview .description p {
+  line-height: 25px;
+}
+.project_preview a {
+  display: block;
+  width: fit-content;
+  padding: 5px 10px;
+  border: 1px solid var(--pure-black);
+  color: var(--pure-black);
 }
 
 /* About */
