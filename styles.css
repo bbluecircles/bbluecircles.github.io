@@ -918,7 +918,7 @@ footer {
     margin: 0 auto;
   }
   #about .grabber h1 {
-    font-size: 48px;
+    font-size: 36px;
   }
 }
 @media screen and (max-width: 504px) {
