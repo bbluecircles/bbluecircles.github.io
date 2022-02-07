@@ -159,7 +159,7 @@ header {
 .header__content #mobileNavigationToggle {
   display: none;
   transition: 0.2s color ease-in-out;
-  transform: translate(0px, 4.15px);
+  transform: translate(0px, 5px);
   fill: var(--fade);
 }
 .header__content {
@@ -697,7 +697,7 @@ footer {
     width: 100%;
   }
   .header__content #mobileNavigationToggle {
-    transform: translate(24px, 4.15px);
+    transform: translate(24px, 5px);
   }
 }
 /* Hero Page */
