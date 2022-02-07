@@ -910,6 +910,9 @@ footer {
   #about .hero__content {
     margin: 0 auto;
   }
+  #about .grabber h1 {
+    font-size: 48px;
+  }
 }
 @media screen and (max-width: 504px) {
   .about-quote {
