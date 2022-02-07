@@ -973,7 +973,7 @@ footer {
   #contact h4 {
     padding-bottom: 40px;
     width: 178px;
-    line-height: 50px;
+    line-height: 55px;
   }
   #contact form input[type="text"] {
     grid-column: 1 / span 1;
