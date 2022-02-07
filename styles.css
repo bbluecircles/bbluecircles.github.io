@@ -47,6 +47,7 @@
   font-size: var(--paragraph_font);
   z-index: 1;
   box-sizing: border-box;
+  overflow: visible;
 }
 body {
   scroll-behavior: smooth;
