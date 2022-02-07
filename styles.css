@@ -1,7 +1,7 @@
 /* General Styles */
 
 :root {
-  --yelllow: #f9df2d;
+  --yelllow: hsl(52, 94%, 58%);
   --light_grey: #e1e1e1;
   --white: #ffffff;
   --black: rgb(17, 17, 17);
@@ -43,7 +43,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  overflow: auto;
   font-size: var(--paragraph_font);
   z-index: 1;
   box-sizing: border-box;
@@ -640,7 +639,7 @@ textarea {
 #contact form textarea:hover {
   border: 1px solid var(--black);
 }
-#contact form input[type="button"] {
+#contact form input[type="submit"] {
   display: block;
   padding: 15px 30px;
   border: 1px solid var(--black);
@@ -653,7 +652,7 @@ textarea {
   -webkit-appearance: none;
   overflow: visible;
 }
-#contact form input[type="button"]:hover {
+#contact form input[type="submit"]:hover {
   background-color: var(--yelllow);
   color: var(--white);
   border: 1px solid var(--yelllow);
