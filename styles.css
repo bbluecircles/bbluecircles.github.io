@@ -577,6 +577,7 @@ header {
   text-align: left;
   margin: 0px auto;
   column-gap: 90px;
+  overflow: visible;
 }
 #contact .c-aside-left div {
   padding-bottom: 15px;
@@ -585,11 +586,15 @@ header {
   display: flex;
   flex-direction: column;
 }
+#contact .c-aside-right {
+  overflow: visible;
+}
 #contact form {
   display: grid;
   grid-template-columns: 300px 300px;
   grid-template-rows: 50px 50px 140px 50px;
   gap: 20px;
+  overflow: visible;
 }
 #contact form input[type="text"] {
   grid-column: span 1;
@@ -610,6 +615,7 @@ header {
 #contact form div {
   grid-column: 1 / span 1;
   grid-row: 4 / span 1;
+  overflow: visible;
 }
 
 #contact form input[type="text"],
@@ -644,6 +650,7 @@ textarea {
     0.2s border ease-in-out;
   color: var(--black);
   -webkit-appearance: none;
+  overflow: visible;
 }
 #contact form input[type="button"]:hover {
   background-color: var(--yelllow);
