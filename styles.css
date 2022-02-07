@@ -970,6 +970,11 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 50px 50px 50px 140px 50px;
   }
+  #contact h4 {
+    padding-bottom: 25px;
+    width: 178px;
+    line-height: 50px;
+  }
   #contact form input[type="text"] {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
