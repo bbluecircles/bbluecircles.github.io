@@ -9,6 +9,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="strict-origin" />
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_qpDfmX3HSY12HfcP9l8KU");
+})();
+</script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    const form_message_wrapper = document.getElementById('form-submit-message-wrapper');
+                    const form_message = document.getElementById('form-submit-message');
+
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    // these IDs from the previous steps
+
+                    const name = this.name.value;
+                    const message = this.message.value;
+                    const email = this.email.value;
+                    const phone = this.phone.value;
+
+                    emailjs.send("service_so7u5gy","template_ll7erpr",{
+                        name: name,
+                        message: message,
+                        email: email,
+                        phone: phone,
+                    })
+                        .then(function() {
+                            form_message_wrapper.style.display = 'block';
+                            form_message.style.color = "hsla(126, 94%, 58%, 1)";
+                            form_message.innerHTML = "Thank you! You'll recieve a response from me shortly."
+                        }, function(error) {
+                            form_message_wrapper.style.display = 'block';
+                            form_message.style.color = "hsla(4, 94%, 58%, 1)";
+                            form_message.innerHTML = `There was a problem sending your message. Please use my other contact methods above.`;
+                        });
+                });
+            }
+        </script>
 </head>
 <body>
     <main class="content">
@@ -166,13 +206,17 @@
                     </div>
                 </div>
                 <div class="c-aside-right">
-                    <form action="submit">
-                        <input type="text" name="name" id="" placeholder="Full Name">
-                        <input type="number" name="phone" id="" placeholder="Phone Number">
-                        <input type="email" name="email" id="" placeholder="Email">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <div id="form-submit-message-wrapper"style="padding-bottom:30px;display:none;">
+                        <span id="form-submit-message"></span>
+                    </div>
+                    <form id="contact-form" action="email.php" method="POST">
+                        <input type="hidden" name="contact_number" style="display: none;">
+                        <input type="text" name="name" id="" placeholder="Full Name" required>
+                        <input type="number" name="phone" id="" type="tel" type="tel" pattern="\([0-9]{3}\)[0-9]{3}-[0-9]{4}$" placeholder="Phone Number" required>
+                        <input type="email" name="email" id="" placeholder="Email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
                         <div>
-                            <input type="button" value="SEND Message" onsubmit="submitForm(event)">
+                            <input type="submit" value="SEND Message">
                         </div>
                     </form>
                 </div>
@@ -193,9 +237,6 @@
         quote: false
     };
 
-    function submitForm(e) {
-        e.preventDefault();
-    }
     const workOffset = document.getElementById('work').offsetTop;
     const aboutOffset = document.getElementById('about').offsetTop;
     const contactOffset = document.getElementById('contact').offsetTop;
