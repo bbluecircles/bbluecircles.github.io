@@ -159,7 +159,7 @@ header {
 .header__content #mobileNavigationToggle {
   display: none;
   transition: 0.2s color ease-in-out;
-  transform: translate(24px, 4.15px);
+  transform: translate(0px, 4.15px);
   fill: var(--fade);
 }
 .header__content {
@@ -694,7 +694,10 @@ footer {
   .mobile__header__content {
     gap: 40px;
     flex-wrap: wrap;
-    width: 85%;
+    width: 100%;
+  }
+  .header__content #mobileNavigationToggle {
+    transform: translate(24px, 4.15px);
   }
 }
 /* Hero Page */
@@ -724,7 +727,12 @@ footer {
 }
 @media screen and (max-width: 575px) {
   .hero__content__wrapper .hero__content {
-    margin: -175px 0px 0px 60px;
+    margin: -175px 0px 0px 0px;
+  }
+
+  .hero__content__wrapper {
+    width: 85vw;
+    margin: 0 auto;
   }
   .hero__content__wrapper .hero__content .grabber {
     text-align: left;
@@ -738,7 +746,7 @@ footer {
 }
 @media screen and (max-width: 400px) {
   .hero__content__wrapper .hero__content {
-    margin: -175px 0px 0px 30px;
+    margin: -175px 0px 0px 0px;
   }
 }
 
