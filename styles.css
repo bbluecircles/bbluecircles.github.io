@@ -443,6 +443,7 @@ header {
   overflow: visible;
   margin-left: 22px;
   transform: translate(-1500px, 0px);
+  color: var(--fade);
 }
 .about-quote {
   display: block;
@@ -459,8 +460,9 @@ header {
   font-size: var(--largest_font);
   content: "\201C";
   line-height: 1;
-  left: -20px;
-  top: -3px;
+  left: -22px;
+  top: -2px;
+  color: var(--black);
 }
 .about-quote blockquote::after {
   display: block;
@@ -470,7 +472,8 @@ header {
   content: "\201D";
   line-height: 1;
   bottom: -19px;
-  right: 221px;
+  right: 219px;
+  color: var(--black);
 }
 .about-quote div {
   display: flex;
@@ -909,7 +912,7 @@ footer {
     width: 419px;
   }
   .about-quote blockquote::after {
-    right: 194px;
+    right: 207px;
   }
   #about .grabber h1::after {
     height: 0px;
@@ -934,7 +937,7 @@ footer {
     width: 275px;
   }
   .about-quote blockquote::after {
-    right: 93px;
+    right: 103px;
   }
 }
 @media screen and (max-width: 350px) {
