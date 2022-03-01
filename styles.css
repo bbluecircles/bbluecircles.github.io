@@ -50,6 +50,7 @@
 }
 body {
   scroll-behavior: smooth;
+  background: var(--white);
 }
 h1,
 h2,
